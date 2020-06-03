@@ -58,9 +58,9 @@ public class UFsJSON {
             
 
             Gson gson = new Gson();
-            Estado1 estado = gson.fromJson(new String(output.getBytes()), Estado1.class);
+            Estado estado = gson.fromJson(new String(output.getBytes()), Estado.class);
 
-            System.out.println(Arrays.toString(estado.getEstados()));
+            System.out.println(Arrays.toString(estado.getSigla()));
 
         } catch (IOException ex) {
             ex.toString();
