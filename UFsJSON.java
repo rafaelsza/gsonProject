@@ -60,7 +60,7 @@ public class UFsJSON {
             Gson gson = new Gson();
             Estado estado = gson.fromJson(new String(output.getBytes()), Estado.class);
 
-            System.out.println(Arrays.toString(estado.getSigla()));
+            System.out.println(estado.getSigla());
 
         } catch (IOException ex) {
             ex.toString();
